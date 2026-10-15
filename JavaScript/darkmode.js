@@ -7,6 +7,8 @@ const bestSeller = document.getElementById("best-seller-image");
 const flashSale = document.getElementById("flash-sale");
 const helpDesk1 = document.getElementById('help-desk1');
 const helpDesk2 = document.getElementById('help-desk2');
+const onlineShop = document.getElementById('online-shop-img');
+const onlineShopAbout = document.getElementById('online-shop-about');
 
 
 
@@ -17,14 +19,18 @@ const changeImage = () => {
     flashSale.src = "images/flash-sale-bg-darkmode.jpg";
     helpDesk1.src = "images/reason-image-1-darkmode.jpg";
     helpDesk2.src = "images/reason-image-2-darkmode.jpg";
+    onlineShop.src = "image/online-shop-img-darkmode.png";
+    onlineShopAbout.src = "image/online-shop-about-darkmode.jpg";
 
 
   } else {
     logoImage.src = "images/logo.png";
     bestSeller.src = "image/item-35.png";
     flashSale.src = "images/flash-sale-bg.jpg";
-     helpDesk1.src = "images/reason-image1.jpg";
+    helpDesk1.src = "images/reason-image1.jpg";
     helpDesk2.src = "images/reason-image2.jpg";
+    onlineShop.src = "image/online-shop-img.png";
+    onlineShopAbout.src = "image/online-shop-about.png";
 
     
   }
