@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/shop.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+    
+  </head>
+  <body>
+    <!-- header page start -->
+
+    <div class="header">
+      <div class="logo-wrapper">
+        <div class="logo-container">
+          <img src="images/logo.png" id="logo-image" />
+        </div>
+        <div class="brand-name">
+          <h3>Ban's scent</h3>
+          <h6>Essence of Luxury</h6>
+        </div>
+      </div>
+
+      <div class="btn-wrapper">
+        <div class="header-btn">
+          <a href="./index.html">Home</a>
+          <a href="#about">About</a>
+          <a href="#shop" class="active">Shop</a>
+          <a href="terminal.html">Terminal</a>
+          <a href="#get-in-touch">Contact Us</a>
+        </div>
+        <div class="icon-container">
+          <i class="fa fa-search"></i>
+          <i class="fa fa-user"></i>
+          <i class="fa fa-cart-shopping"></i>
+          <!-- theme switch code -->
+          <button id="theme-switch">
+            <i class="fa fa-moon"></i>
+            <i class="fa fa-sun"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- header page end -->
+
+    <!-- phone-header page start -->
+
+    <div class="phone-header">
+      <div class="phone-logo-wrapper">
+        <div class="phone-logo-container">
+          <img src="images/logo.png" id="logo-image" />
+        </div>
+        <div class="phone-brand-name">
+          <h3>Ban's scent</h3>
+          <h6>Essence of Luxury</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- phone header paeg end -->
+
+    <!-- Swiper -->
+
+    <div
+      style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+      class="swiper mySwiper"
+    >
+      <div
+        class="parallax-bg"
+        style=" background-image: url(./images/shop-page-background.jpg);"
+        data-swiper-parallax="-23%"
+      ></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="title" data-swiper-parallax="-300">Ban's Scent</div>
+          <div class="subtitle" data-swiper-parallax="-200">Essence of Luxury</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              At Ban’s Scent, we believe that a fragrance is more than just a scent — it is a reflection of your personality, a memory waiting to be made, and a signature that stays with you wherever you go. Inspired by the beauty of individuality and the art of luxury, our journey began with a simple vision: to help everyone discover a fragrance that truly represents who they are. From refreshing everyday scents to rich, captivating aromas, we bring together fragrances that make every moment feel special.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide slide-3">
+          <div class="title" data-swiper-parallax="-300">Ban's Scent</div>
+          <div class="subtitle" data-swiper-parallax="-200">Our Mission</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              Our mission is to make the experience of finding your perfect scent both memorable and personal. At Ban’s Scent, we carefully curate our collection to offer fragrances for every mood, occasion, and style, helping you express yourself with confidence and elegance. Whether you are searching for your signature scent or a meaningful gift for someone special, we invite you to explore our world of fragrance, where every bottle tells a story and every scent leaves a lasting impression.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="availible-item-container-wrapper">
+      <div class="availible-item-title">
+        <p>DISCOVER OUR COLLECTION</p>
+        <h1>Available Fragrances</h1>
+        <span>Find a scent that becomes part of your signature.</span>
+      </div>
+    </div>
+
+    <div onclick="window.location.href = 'cart.html'" class="shop-icon">
+      <i class="fa fa-cart-shopping"></i>
+    </div>
+    <script src="./JavaScript/shop-darkmode.js"></script>
+    <script src="./JavaScript/shop.js"></script>
+    <script type="module" src="./cart.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        speed: 600,
+        parallax: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

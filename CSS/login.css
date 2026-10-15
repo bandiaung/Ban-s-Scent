@@ -1,0 +1,201 @@
+
+      /* Login Page */
+      body {
+        background-image: url("../image/account-bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --primary-color: #145a42;
+        --secondary-color: #d5dec6;
+        --third-color: #bbc3ac;
+        --forth-color: #e5e8d7;
+        --fifth-color: #000;
+        --sixth-color: #fff;
+        --seventh-color: #333;
+        --eighth-color: rgb(151, 152, 154);
+        --text-color: gray;
+      }
+      .darkmode {
+        --primary-color: #9fb7d4; /* silver blue */
+        --secondary-color: #080b12; /* deep navy black */
+        --third-color: #111827; /* dark blue */
+        --forth-color: #1b2433; /* lighter navy */
+        --fifth-color: #dbe7f5; /* icy white */
+        --sixth-color: #f5f7fa; /* white */
+        --seventh-color: #aab4c3; /* soft gray */
+        --eighth-color: #667085; /* muted gray */
+        --text-color: #b8c2d0;
+      }
+
+      /* login css */
+
+      .login-container{
+  width:400px;
+  height:420px;
+  margin:10px auto;
+  border:1px solid #000;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  backdrop-filter:blur(30px);
+  border-radius:30px;
+  position:relative;
+}
+.login-items{
+  display:grid;
+  grid-template-columns: 1fr;
+  margin-bottom:50px;
+}
+.login-items h1{
+  text-align:center;
+  text-transform:uppercase;
+}
+.login-items-group{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  font-size:12px;
+  margin:20px;
+  text-transform:capitalize;
+}
+.login-items-group a{
+  color:#000;
+  text-decoration:none;
+  transition:.4s;
+}
+.login-items-group a:hover{
+  color:#fff;
+}
+
+.login-items button{
+  position:absolute;
+  width:100px;
+  height:40px;
+  bottom:30px;
+  right:38%;
+ 
+ border-radius:20px;
+ background-color: #002508;
+ color:white;
+ text-transform:capitalize;
+ border:none;
+ transition:.4s;
+ text-transform:uppercase;
+ letter-spacing:2px;
+ font-size:12px;
+}
+.login-items button:hover{
+  background-color: white;
+  box-shadow:0 0 30px #fff;
+  color:#002508;
+  border:none;
+}
+.login-items input{
+  width:300px;
+  height:20px;
+  margin:10px;
+  border-radius:8px;
+  border:1px solid #000;
+  outline:none;
+  padding:10px;
+  background:transparent;
+}
+.login-items input:hover{
+  border:1px solid #fff;
+  color:#fff;
+}
+
+.login-items input::placeholder{
+  color:#000;
+  transition:.5s;
+}
+.login-items input:hover::placeholder{
+  color:#fff;
+}
+.login-items input:focus {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.login-items input:focus::placeholder {
+  color: white;
+}
+
+      
+
+      /* theme switch buttton Css */
+      #theme-switch {
+        width: 60px;
+        height: 20px;
+        background-color: var(--primary-color);
+        padding-right: 20px;
+        padding-left: 4px;
+
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3000;
+
+        border: none;
+      }
+      #theme-switch i {
+        color: var(--sixth-color);
+      }
+      #theme-switch i:last-child {
+        display: none;
+        transform: translateX(16px);
+      }
+      .darkmode #theme-switch i:first-child {
+        display: none;
+      }
+      .darkmode #theme-switch i:last-child {
+        display: block;
+      }
+
+      /* header css */
+      .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        margin-top:20px;
+      }
+      .header h1 {
+        font-size: 20px;
+        margin: 0;
+      }
+      .header p {
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .logo-image {
+        width: 90px;
+        height: 70px;
+      }
+      .logo-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      span{
+        color:red;
+        font-size:11px;
+        letter-spacing:2px;
+      }
+
+      /* change color from js  */
+      .change-color{
+        color:lightgreen;
+      }
+
+    
