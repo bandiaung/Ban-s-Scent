@@ -20,7 +20,7 @@ const changeImage = () => {
     helpDesk1.src = "images/reason-image-1-darkmode.jpg";
     helpDesk2.src = "images/reason-image-2-darkmode.jpg";
     onlineShop.src = "image/online-shop-img-darkmode.png";
-    onlineShopAbout.src = "image/online-shop-about-darkmode.jpg";
+    onlineShopAbout.src = "image/online-shop-about-darkmode.png";
 
 
   } else {
